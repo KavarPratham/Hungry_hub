@@ -1,0 +1,109 @@
+.smallimg{
+    height: 100%;
+    width: 200px;
+    opacity: 0.9;
+}
+.bigimg{
+    width: 700px;
+    height: 400px;
+    opacity: 0.9;
+}
+.linkimg{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.container, td{
+    overflow: hidden;
+}
+td img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+td:hover img{
+    transform: scale(1.1);
+    transform-origin: center center;
+    opacity: 1;
+}
+table{
+    margin-left: 0px;
+    height: 400px;
+    border-collapse: separate;
+}
+button{
+    border-width: 1px;
+    border-radius: 6px;
+    height: 40px;
+    width: 100px;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+    color: orange;
+    background-color:black;
+}
+.image-div img{
+    border-radius: 10px;
+}
+/* .item-name{
+    position: relative;
+} */
+body{
+    background-color: orange;
+}
+.photos-section {
+    border-collapse: collapse;
+    width: 100%;
+}
+.photos-section td {
+    padding: 10px;
+    border: none;
+    text-align: center;
+}
+.photos-section td img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.item-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image-div {
+    flex: 0 0 auto; /* Don't allow image-div to grow or shrink */
+    margin-right: 20px; /* Add some space between image and details */
+}
+
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 130px;
+}
+.item-name{
+    margin: 0;
+    font-size: 18px; /* Increase font size for better visibility */
+    color: #333;
+}
+.item-price {
+    font-weight: bold;
+}
+.add-to-cart-btn {
+    align-self: flex-start; 
+    padding: 8px 16px;
+    border: none;
+    background-color: white; /* Blue color for button */
+    font-size: 16px;
+    width: 130px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
